@@ -1,18 +1,19 @@
+#!/usr/bin/env python3
 """Utility to extract a range of pages from one or more PDF files.
 
 Example usages
 ---------------
 1. Extract pages 1-3 from ``report.pdf`` into ``out``::
 
-    python python/pdf_utilities/extract_page_range.py report.pdf --start 1 --end 3 --output-dir out
+    python extract_page_range.py report.pdf --start 1 --end 3 --output-dir out
 
 2. Slice pages 2-5 from multiple PDFs and write them to ``slices``::
 
-    python python/pdf_utilities/extract_page_range.py chapter1.pdf chapter2.pdf --start 2 --end 5 --output-dir slices
+    python extract_page_range.py chapter1.pdf chapter2.pdf --start 2 --end 5 --output-dir slices
 
 3. Use shell globbing to process all PDFs in a folder::
 
-    python python/pdf_utilities/extract_page_range.py data/*.pdf --start 10 --end 12 --output-dir subset
+    python extract_page_range.py data/*.pdf --start 10 --end 12 --output-dir subset
 
 """
 
